@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.main_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cacccd
+}
+
+.card {
+    height: auto;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    margin: 40px 0
+}
+
+.d-none {
+    display: none !important
+}
+
+.image {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center
+}
+
+.image span {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #eeeeee
+}
+
+.image span img {
+    height: 100%;
+    width: 100%
+}
+
+.image h3 {
+    margin-top: 14px;
+    font: bold
+}
+
+.image p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #929296
+}
+
+.input_text {
+    position: relative;
+    margin-top: 40px
+}
+
+input[type="text"] {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border: 1px solid #e8e9eb;
+    padding: 0 5px;
+    border-radius: 5px;
+    transition: all 0.5s
+}
+
+input[type="number"] {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border: 1px solid #e8e9eb;
+    padding: 0 5px;
+    border-radius: 5px;
+    transition: all 0.5s
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+input[type="password"] {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border: 1px solid #e8e9eb;
+    padding: 0 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    padding-right: 40px
+}
+
+.input_text span {
+    position: absolute;
+    top: -17px;
+    font-size: 13px;
+    left: 0;
+    color: #616161;
+    font-weight: bold
+}
+
+.input_text i {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    cursor: pointer;
+    color: #5e6878
+}
+
+.fa-eye {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    cursor: pointer;
+    color: #5e6878
+}
+
+input:focus {
+    border: 1px solid #4558ff !important
+}
+
+input:focus~span {
+    color: #4558ff
+}
+
+.sipa {
+    margin-top: 30px
+}
+
+.rem_for {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rem {
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.rem span {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #5e6878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.rem span i {
+    color: #fff
+}
+
+.rem_green {
+    background-color: green !important
+}
+
+.rem p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 18px
+}
+
+.rem_for span {
+    margin-top: 7px;
+    font-size: 13px;
+    color: #828486;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.button_Signup {
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px
+}
+.button_Signup button{
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 13px;
+    color: #fff;
+    outline: 0;
+    border: none;
+    background-color: #4558ff
+}
+.button button {
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 13px;
+    color: #fff;
+    outline: 0;
+    border: none;
+    background-color: #4558ff
+}
+
+.button button:hover {
+    background-color: blue !important
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px
+}
+
+.social span {
+    height: 45px;
+    width: 65px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.social span img {
+    width: 30px;
+    object-fit: cover;
+    transition: all 0.5s
+}
+
+.social span:hover img {
+    width: 37px
+}
+
+.social span:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #434343
+}
+
+.social span:nth-child(3) {
+    background-color: #1b9ae5
+}
+
+.social span:nth-child(4) {
+    border: 1px solid #a5a6a7;
+    background-color: #fff
+}
+
+.button p {
+    margin: 20px 0;
+    color: #8d8f91;
+    font-size: 14px
+}
+
+.button p #a {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.upwarn {
+    border: 1px solid red !important
+}
+
+.inwarn {
+    border: 1px solid red !important
+}
+
+.fa-check {
+    margin-top: 1px;
+    font-size: 17px
+}
+
+.gruptick {
+    background-color: green !important
+}
+
+.greenish {
+    background-color: green !important
+}
